@@ -28,13 +28,13 @@ class App extends React.Component {
           {/* Changing path purely for dev of app page*/}
           <Route
             exact
-            path="/"
+            path="/app"
             render={() => {
               //return <HomePage auth={this.auth} />;
               return <HomePage />;
             }}
           />
-          <Route path="/app" component={AppPage} />
+          <Route path="/" component={AppPage} />
         </Switch>
       </>
     );

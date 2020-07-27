@@ -52,32 +52,33 @@ const LoadingStyle = {
 };
 
 const FlexChild = {
-  flex: "1"
+  flex: "1",
+  height: "100vh"
 };
 
 class CenterPane extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      loading: false
+      loading: true
     };
   }
 
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({ loading: !this.state.loading });
-    }, 1500);
-  }
+  // componentDidMount() {
+  //   setTimeout(() => {
+  //     this.setState({ loading: !this.state.loading });
+  //   }, 1500);
+  // }
 
   render() {
     return (
       <div style={FlexChild}>
         {this.state.loading ? (
           <Box>
-            <div style={Width}>
+            {/* <div style={Width}>
               <DateLabel />
             </div>
-            <InspirationBox />
+            <InspirationBox /> */}
             <div style={Width}>
               <SectionTitle title="Actions" />
             </div>

@@ -44,9 +44,9 @@ class AppPage extends Component {
     return (
       <ThemeProvider theme={this.props.storemode ? dark : light}>
         <Flexbox>
-          <LeftPane />
+          {/* <LeftPane /> */}
           <CenterPane />
-          <RightPane />
+          {/* <RightPane /> */}
         </Flexbox>
       </ThemeProvider>
     );
